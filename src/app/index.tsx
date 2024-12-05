@@ -3,7 +3,7 @@ import { Pressable, Text, View } from "react-native";
 
 export default function App() {
   return (
-    <View className="bg-gray-700 flex-1 items-center justify-center gap-4">
+    <View className="bg-gray-700 flex-1 items-center justify-center gap-6">
       <Text className=" text-white text-4xl font-bold">
         Welcome to Qwiz<Text className="text-indigo-400">It</Text>!
       </Text>
@@ -11,10 +11,10 @@ export default function App() {
         Create your own quizzes or play quizzes created by others
       </Text>
       <Pressable
-        className="bg-indigo-400 p-2 rounded-md"
+        className="bg-indigo-400 p-2 rounded-md w-1/2"
         onPress={() => router.push("/(main)/dashboard")}
       >
-        <Text className="text-white text-lg">Get Started</Text>
+        <Text className="text-white text-lg text-center">Get Started</Text>
       </Pressable>
     </View>
   );
